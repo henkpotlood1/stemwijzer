@@ -1,8 +1,39 @@
-var theses = [
-	"Er moet een maatschappelijke dienstplicht voor jongeren komen. Zij kunnen dan dienen in het leger, bij de politie of in de zorg.",
-	"Om discriminatie op basis van de naam te voorkomen, moet anoniem solliciteren bij de overheid en bij openbare instellingen de regel worden.",
-	"Belediging van groepen op grond van ras, godsdienst of geaardheid moet niet langer strafbaar zijn."
+var thesis = [
+	{	thesis:"Er moet een maatschappelijke dienstplicht voor jongeren komen. Zij kunnen dan dienen in het leger, bij de politie of in de zorg.",
+		scores : [
+			[-3,0,3], //pvda: yes, not sure, no
+			[-5,-2,3], //vvd
+			[0,2,3] //cda
+		],
+		response: null
+	},
+	{	thesis:"Om discriminatie op basis van de naam te voorkomen, moet anoniem solliciteren bij de overheid en bij openbare instellingen de regel worden.",
+		scores : [
+			[-2,1,4], //pvda
+			[3,2,-2], //vvd
+			[-3,1,2] //cda
+		],
+		response: null
+	},
+	{	thesis:"Belediging van groepen op grond van ras, godsdienst of geaardheid moet niet langer strafbaar zijn.",
+		scores : [
+			[4,1,2], //pvda
+			[2,3,-4], //vvd
+			[2,0,-5] //cda
+		],
+		response: null
+	}
 ];
+
+var parties = [
+	{party:'pvda', score:0},
+	{party:'vvd', score:0},
+	{party:'cda', score:0}
+];
+
+
+
+
 
 function createThesis(thesis, alignment, opposing) {
 	this.thesis = thesis;
@@ -16,6 +47,15 @@ function party(name, alignment) {
 	this.score = 0;
 	this.alignment = alignment; 
 }
+
+var pvv = 0;
+var d66 = 0;
+var groenlinks = 0; 
+
+
+var thesis = [
+  
+];
 
 var i = 0;
 var score = 0;
